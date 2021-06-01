@@ -1,0 +1,19 @@
+.title{
+    background-color: #9df6f6;
+}
+.form{
+    diplay: flex;
+flex-direction: column;
+    
+}
+.name{
+background-color: #c1c1c1;
+}
+
+.email{
+    background-color: #c1c1c1;
+}
+
+.message{
+    background-color: #c1c1c1;
+}
