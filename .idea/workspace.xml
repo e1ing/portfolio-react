@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1da7abee-a0e1-4407-adc2-baf7773758af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/footer/Footer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/styles/Container.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/styles/Container.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/contacts/Contacts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/Contacts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contacts/Contacts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contacts/Contacts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/propjects/Projects.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/propjects/Projects.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/propjects/Projects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/propjects/Projects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/propjects/project/Project.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/propjects/project/Project.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/propjects/project/Project.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/propjects/project/Project.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/skills/Skills.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/skills/Skills.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/skills/skill/Skill.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/skills/skill/Skill.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -96,7 +103,10 @@
       <workItem from="1622565838945" duration="521000" />
       <workItem from="1622979405309" duration="765000" />
       <workItem from="1623041710040" duration="350000" />
-      <workItem from="1623042093359" duration="1214000" />
+      <workItem from="1623042093359" duration="5457000" />
+      <workItem from="1623060618458" duration="124000" />
+      <workItem from="1623077609988" duration="6971000" />
+      <workItem from="1623089723377" duration="3782000" />
     </task>
     <servers />
   </component>

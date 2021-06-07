@@ -1,37 +1,35 @@
 .project {
     width: 370px;
-    background-color: honeydew;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imgContainer {
+.container {
     background-color: #90b390;
-    position: relative;
 }
 
-.imgStyle {
-    height: 500px;
-    width: 370px;
-    position: absolute;
+.imgContainer {
+    background-image: url("http://руммикс.рф/up/articles/0O9yfbTt8Qk.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-}
-
-.text {
-    text-align: left;
+.link {
+    background-color: #82d082;
 }
 
 .projectTitle {
-    background-color: #2dd42d;
+    background-color: #65bd65;
 }
 
 .projectDescription {
-    background-color: #bef3be;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
 }

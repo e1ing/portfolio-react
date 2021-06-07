@@ -1,0 +1,15 @@
+.footer{
+    /*height: 100vh;*/
+    background-color: #f3dff5;
+}
+
+.container{
+    flex-direction: column;
+}
+
+
+.links{
+    width: 50%;
+}
+
+

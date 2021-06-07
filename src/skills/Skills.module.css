@@ -1,10 +1,10 @@
 .skillsBlock{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #bfeab8;
 }
 
 .skillsContainer{
-    align-items: center; /*двигает содержимае по второстепенной оси по ценру*/
+    align-items: center; /*двигает содержимое по второстепенной оси по ценру*/
     flex-direction: column;
     justify-content: flex-start;
 }
