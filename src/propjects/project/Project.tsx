@@ -11,14 +11,17 @@ type ProjectType = {
 export function Project(props: ProjectType) {
     return (
         <div className={style.project}>
+
             <div className={style.imgContainer}>
                 <img className={style.imgStyle} src={props.imageUrl} alt={props.imageText}></img>
                 <button className={style.btnStyle}>Details</button>
             </div>
+
             <div className={style.text}>
-                <div className={style.projectTitle}>
+                <span className={style.projectTitle}>
                     {props.projectTitle}
-                </div>
+                </span>
+
                 <div className={style.projectDescription}>
                     {props.projectDescription}
                 </div>
