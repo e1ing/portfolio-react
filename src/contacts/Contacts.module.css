@@ -10,7 +10,7 @@
 .form {
     background-color: #bcc0d7;
     border: 1px solid;
-    diplay: flex;
+    display: flex;
     flex-direction: column;
    justify-content: space-between;
 }
