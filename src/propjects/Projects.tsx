@@ -7,12 +7,6 @@ import todoImage from './../assets/image/maxresdefault.jpg'
 import socialNetworkImage from  './../assets/image/3.jpg'
 
 export const Projects = () => {
-    const social = {
-        backgroundImage: `url(${todoImage})`,
-    };
-    const todo = {
-        backgroundImage: `url(${socialNetworkImage})`,
-    };
 
     return (
         <div className={style.projectsBlock}>
@@ -20,13 +14,13 @@ export const Projects = () => {
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
                     <Project
-                        style = {social}
+                        styleImg= {{backgroundImage: `url(${socialNetworkImage})`}}
                         projectTitle={'Social Network'}
                         projectDescription={'A social network is a social.'}
                         linkUrl ={''}
                     />
                     <Project
-                        style = {todo}
+                        styleImg= {{backgroundImage: `url(${todoImage})`}}
                         projectTitle={'Todolist'}
                         projectDescription={'Most typically, they’re organised in order of priority.'}
                         linkUrl ={''}

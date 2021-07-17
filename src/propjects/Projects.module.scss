@@ -1,26 +1,25 @@
-.projectsBlock{
-    background-color: #f7f7f7;
-    padding: 100px 0;
-}
+@import '../common/styles/saas/variables';
 
-.projectsContainer{
+.projectsBlock {
+  background-color:$bgColor;
+  padding: 100px 0;
+
+  .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
-}
-.projects {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    align-items: flex-start;
-    background: #f7f7f7;
-}
 
-@media screen and (max-width: 1134px) {
-    /*пока максимальная не дойдёт до 929*/
     .projects {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      align-items: flex-start;
+      background:$bgColor;
+      @media screen and (max-width: 1134px) {
         justify-content: center;
+      }
     }
+  }
 }

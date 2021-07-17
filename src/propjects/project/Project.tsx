@@ -5,12 +5,12 @@ type ProjectType = {
     projectTitle: string,
     projectDescription: string,
     linkUrl: string,
-    style: {}
+    styleImg: {backgroundImage: string}
 }
 
-export const Project: FC<ProjectType> = ({projectTitle, projectDescription, linkUrl}) => {
+export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescription, linkUrl}) => {
     return (
-        <div className={style.project}>
+        <div className={style.project} style={styleImg}>
             <div className={style.imgContainer} style={style}>
                 <a href={linkUrl} className={style.link}>Details</a>
             </div>
