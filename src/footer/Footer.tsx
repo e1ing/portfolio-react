@@ -5,17 +5,17 @@ import styleContainer from "../common/styles/Container.module.css"
 function Footer() {
     return (
         <div className={style.footer}>
-            <div className={`${styleContainer.container} ${style.container}`}>
-                <h2 className={style.title}>Elya</h2>
-                <div className={`${styleContainer.container} ${style.links}`}>
-                    <span>Telegram</span>
-                    <span>Pinterest</span>
-                    <span>LinkedIn</span>
-                    <span>Facebook</span>
+            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+                <h2 className={style.title}>Elvira Kisling</h2>
+                <div className={`${styleContainer.container} ${style.socialIcons}`}>
+                    <div className={style.socialIcon}>Telegram</div>
+                    <div className={style.socialIcon}>Pinterest</div>
+                    <div className={style.socialIcon}>LinkedIn</div>
+                    <div className={style.socialIcon}>Facebook</div>
                 </div>
-                <div>
+                <span>
                     ©2021 All rights reserved
-                </div>
+                </span>
             </div>
         </div>
     )

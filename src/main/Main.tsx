@@ -8,7 +8,7 @@ function Main() {
             <div className={styleContainer.container}>
                 <div className={style.greeting}>
                     <span>Hi there</span>
-                    <h1>I am Elya Kisling</h1>
+                    <h1>I am Elvira Kisling</h1>
                     <p>Frontend developer</p>
                 </div>
 

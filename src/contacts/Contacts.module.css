@@ -3,37 +3,35 @@
     background-color: #f3eaf3;
 }
 
-.container{
+.contactsContainer{
     flex-direction: column;
+    justify-content: flex-start;
 }
 
-.form {
+.contactForm {
+    width: 50%;
     background-color: #bcc0d7;
     border: 1px solid;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+   justify-content: center;
+}
+
+.contactForm input, .contactForm textarea {
+    width: 100%
 }
 
 .title {
     background-color: #9df6f6;
 }
-.name {
-    background-color: #c1c1c1;
-    width: 280px;
-}
 
-.email {
-    background-color: #c1c1c1;
-    width: 280px;
-}
-
-.message {
-    background-color: #c1c1c1;
-    width: 280px;
-}
-
-.btn{
+.submitBtn{
     width: 150px;
     height: 50px;
+}
+
+@media screen and (max-width: 470px){
+    .contactForm{
+        width: 100%;
+    }
 }
