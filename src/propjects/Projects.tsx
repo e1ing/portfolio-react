@@ -3,7 +3,7 @@ import style from './Projects.module.scss';
 import {Project} from './project/Project';
 import styleContainer from '../common/styles/Container.module.css'
 import {Title} from '../common/components/title/Title';
-import todoImage from './../assets/image/maxresdefault.jpg'
+import todoImage from './../assets/image/todo.jpg'
 import socialNetworkImage from  './../assets/image/3.jpg'
 
 export const Projects = () => {
