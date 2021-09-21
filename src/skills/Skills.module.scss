@@ -1,6 +1,8 @@
+@import '../common/styles/saas/variables';
+
 .skillsBlock {
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-color: $bgSecondColor;
 
   .skillsContainer {
     align-items: center; /*двигает содержимое по второстепенной оси по ценру*/
@@ -8,7 +10,6 @@
     justify-content: flex-start;
 
     .skills {
-      border: 1px solid;
       width: 100%;
       display: flex;
       justify-content: space-between;
