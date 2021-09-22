@@ -1,0 +1,60 @@
+@import '../common/styles/saas/variables';
+
+.contactsBlock {
+  min-height: 100vh;
+  background-color: $bgSecondColor;
+
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .contactForm {
+      width: 50%;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      outline: none;
+      border: none;
+      @media screen and (max-width: 470px) {
+        width: 100%;
+      }
+
+      .contactForm input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: $bgColor;
+        margin-bottom: 30px;
+      }
+
+      .contactForm textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: $bgColor;
+        margin-bottom: 30px;
+      }
+
+
+    }
+
+    .title {
+      background-color: #9df6f6;
+    }
+  }
+
+  .submitBtn {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+
+
+
