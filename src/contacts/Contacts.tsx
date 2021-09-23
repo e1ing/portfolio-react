@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Contacts.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
 
@@ -76,7 +76,7 @@ export const Contacts = () => {
                         </div>
                     </div>
 
-                    <form onSubmit={formik.handleSubmit} className={style.contactForm}>
+                    <form onSubmit={formik.handleSubmit} >
                         <input  {...formik.getFieldProps("name")}/>
                         <input type="email" {...formik.getFieldProps("email")}/>
                         <textarea {...formik.getFieldProps("message")}/>

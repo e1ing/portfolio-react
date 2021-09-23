@@ -8,7 +8,59 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    .contactForm {
+    .contactsArea {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .contactInfo {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        margin-left: 70px;
+        color: #666;
+        .infoItem {
+          font-size: 16px;
+          color: #666;
+          .icon {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            float: left;
+            background: #222;
+            color: #eee;
+            border-radius: 4px;
+
+            .iconMap {
+              &::before {
+                content: "\2302";
+              }
+            }
+
+            .iconPhone {
+              &::before {
+                content: "\2706";
+              }
+            }
+
+            .iconEmail {
+              &::before {
+                content:"\2709";
+              }
+            }
+          }
+        }
+        .socialIcons{
+          .span{
+
+          }
+        }
+      }
+    }
+
+    .form {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -16,10 +68,13 @@
       outline: none;
       border: none;
 
-       .form input, .form textarea {
-         max-width: 100%;
-         max-height: 140px;
-        background-color: $bgColor;
+      .input,
+      .textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: $bgColor;
+        margin-bottom: 30px;
 
         @media screen and (max-width: 470px) {
           .contactForm {
@@ -45,6 +100,8 @@
     }
   }
 }
+
+
 
 
 
