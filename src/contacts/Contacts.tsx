@@ -28,32 +28,63 @@ export const Contacts = () => {
             return errors;
         },
         onSubmit: values => {
-           // dispatch(loginTC(values))
+            // dispatch(loginTC(values))
             formik.resetForm();
         },
     })
 
 
     return (
-        <div className ={style.contactsBlock}>
-        <div className={`${styleContainer.container} ${style.contactsContainer}`}>
-            <Title text ={"Contacts"}/>
+        <div className={style.contactsBlock}>
+            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+                <Title text={"Contacts"}/>
+                <div className={style.contactsArea}>
 
-            <div>
-                <div>Adress</div>
-                <div>Phone</div>
-                <div>E-mail</div>
+                    <div className={style.contactInfo}>
+                        <div className={style.infoItem}>
+                            <div className={style.icon}>
+                                <span className={style.iconMap}></span>
+                            </div>
+                            <div className={style.infoContent}>
+                                <h6>Address</h6>
+                                <h5>21 Jumpe Street</h5>
+                            </div>
+                        </div>
+                        <div className={style.infoItem}>
+                            <div className={style.icon}>
+                                <span className={style.iconPhone}></span>
+                            </div>
+                            <div className={style.infoContent}>
+                                <h6>Phone</h6>
+                                <h5>+2000323232</h5>
+                            </div>
+                        </div>
+                        <div className={style.infoItem}>
+                            <div className={style.icon}>
+                                <span className={style.iconEmail}></span>
+                            </div>
+                            <div className={style.infoContent}>
+                                <h6>E-mail</h6>
+                                <h5>elvira.kisling@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div className={style.socialIcons}>
+                            <span><i className={style.gitHub}/></span>
+                            <span><i className={style.codewars}/></span>
+                            <span><i className={style.linkedin}/></span>
+                            <span><i className={style.telegram}/></span>
+                        </div>
+                    </div>
+
+                    <form onSubmit={formik.handleSubmit} className={style.contactForm}>
+                        <input  {...formik.getFieldProps("name")}/>
+                        <input type="email" {...formik.getFieldProps("email")}/>
+                        <textarea {...formik.getFieldProps("message")}/>
+                    </form>
+
+                </div>
+                <button type="submit" className={style.submitBtn}>Send message</button>
             </div>
-
-
-
-                <form onSubmit={formik.handleSubmit} className={style.contactForm} >
-                    <input  {...formik.getFieldProps("name")}/>
-                    <input type="email" {...formik.getFieldProps("email")}/>
-                    <textarea {...formik.getFieldProps("message")}/>
-                </form>
-            <button type="submit" className={style.submitBtn}>Send message</button>
-        </div>
         </div>
     )
 }

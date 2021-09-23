@@ -9,47 +9,42 @@
     justify-content: flex-start;
 
     .contactForm {
-      width: 50%;
-      border: 1px solid;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       outline: none;
       border: none;
-      @media screen and (max-width: 470px) {
-        width: 100%;
+
+       .form input, .form textarea {
+         max-width: 100%;
+         max-height: 140px;
+        background-color: $bgColor;
+
+        @media screen and (max-width: 470px) {
+          .contactForm {
+            width: 100%;
+          }
+        }
       }
 
-      .contactForm input {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: $bgColor;
-        margin-bottom: 30px;
+      .title {
+        background-color: #9df6f6;
       }
-
-      .contactForm textarea {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: $bgColor;
-        margin-bottom: 30px;
-      }
-
-
     }
 
-    .title {
-      background-color: #9df6f6;
+    .submitBtn {
+      width: 150px;
+      height: 50px;
     }
-  }
 
-  .submitBtn {
-    width: 150px;
-    height: 50px;
+    .contactsArea {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
-
 
 
 
