@@ -3,6 +3,11 @@ import style from './Contacts.module.scss'
 import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
+import github_icon from "../assets/image/github_icon.png"
+import telegram_icon from "../assets/image/telegram_icon.svg"
+import codewars_icon from "../assets/image/codewars_icon.svg"
+import linkedin_icon from '../assets/image/linkedin_icon.svg'
+import socialNetworkImage from "../assets/image/social-network.png";
 
 type FormikErrorType = {
     email?: string
@@ -32,7 +37,6 @@ export const Contacts = () => {
             formik.resetForm();
         },
     })
-
 
     return (
         <div className={style.contactsBlock}>
@@ -69,14 +73,14 @@ export const Contacts = () => {
                             </div>
                         </div>
                         <div className={style.socialIcons}>
-                            <span><i className={style.gitHub}/></span>
-                            <span><i className={style.codewars}/></span>
-                            <span><i className={style.linkedin}/></span>
-                            <span><i className={style.telegram}/></span>
+                            <span className={`$style.socialIcon`}></span>
+                            <span className={style.socialIcon}><img src="telegram_icon"/></span>
+                            <span className={style.socialIcon}><img src="codewars_icon"/></span>
+                            <span className={style.socialIcon}><img src="linkedin_icon"/></span>
                         </div>
                     </div>
 
-                    <form onSubmit={formik.handleSubmit} >
+                    <form onSubmit={formik.handleSubmit} className={style.formStyle} >
                         <input  {...formik.getFieldProps("name")}/>
                         <input type="email" {...formik.getFieldProps("email")}/>
                         <textarea {...formik.getFieldProps("message")}/>
