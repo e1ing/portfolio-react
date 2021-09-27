@@ -54,6 +54,11 @@
               }
             }
           }
+          .infoContent{
+            text-align: left;
+            margin-left: 70px;
+            color: #666;
+          }
         }
 
         .socialIcons {
@@ -75,48 +80,52 @@
             border-radius: 50%;
             border: 1px solid #222;
 
-          .gitHub {
-            &::before {
-              content: "\f09b";
+            .gitHub {
+              &::before {
+                content: "\f09b";
+              }
             }
-          }
 
-          .codewars {
-            &::before {
-              content: "\f09b";
+            .codewars {
+              &::before {
+                content: "\f09b";
+              }
             }
-          }
 
-          .linkedin {
-            &::before {
-              content: "\f09b";
+            .linkedin {
+              &::before {
+                content: "\f09b";
+              }
             }
-          }
 
-          .telegram {
-            &::before {
-              content: "\f09b";
+            .telegram {
+              &::before {
+                content: "\f09b";
+              }
             }
           }
-        }
         }
       }
 
-      .formStyle .form {
+      .formStyle {
         overflow: hidden;
 
-        .input {
-          width: 100%;
+        input {
+          width: 80%;
           padding: 10px;
           border: none;
           background: #f7f7f7;
           margin-bottom: 30px;
         }
 
-        .textarea {
-          max-width: 100%;
-          max-height: 140px;
+        textarea {
+          width: 80%;
           height: 140px;
+          padding: 10px;
+          border: none;
+          background: #f7f7f7;
+          margin-bottom: 30px;
+          resize: none;
         }
       }
 
@@ -131,6 +140,11 @@
     .submitBtn {
       width: 150px;
       height: 50px;
+      background: $headingColor;
+      color: #eee;
+      border: none;
+      transition: all .5s;
+      border-radius: 4px;
     }
 
     .contactsArea {

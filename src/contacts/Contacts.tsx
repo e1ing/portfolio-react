@@ -6,7 +6,7 @@ import {useFormik} from "formik";
 import github_icon from "../assets/image/github_icon.png"
 import telegram_icon from "../assets/image/telegram_icon.svg"
 import codewars_icon from "../assets/image/codewars_icon.svg"
-import linkedin_icon from '../assets/image/linkedin_icon.svg'
+import linkedin_icon from '../assets/image/linkedin_icon.png'
 import socialNetworkImage from "../assets/image/social-network.png";
 
 type FormikErrorType = {
@@ -74,9 +74,9 @@ export const Contacts = () => {
                         </div>
                         <div className={style.socialIcons}>
                             <span className={`$style.socialIcon`}></span>
-                            <span className={style.socialIcon}><img src="telegram_icon"/></span>
-                            <span className={style.socialIcon}><img src="codewars_icon"/></span>
-                            <span className={style.socialIcon}><img src="linkedin_icon"/></span>
+                            <span className={style.socialIcon}><img src={telegram_icon}/></span>
+                            <span className={style.socialIcon}><img src={codewars_icon}/></span>
+                            <span className={style.socialIcon}><img src={linkedin_icon}/></span>
                         </div>
                     </div>
 
