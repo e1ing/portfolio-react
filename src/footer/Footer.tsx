@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Footer.module.css'
+import style from './Footer.module.scss'
 import styleContainer from "../common/styles/Container.module.scss"
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
                 <div className={`${styleContainer.container} ${style.socialIcons}`}>
                     <div className={style.socialIcon}>Telegram</div>
                     <div className={style.socialIcon}>Pinterest</div>
-                    <div className={style.socialIcon}>LinkedIn</div>
+                    <div className={style.socialIcon}><i  className="fab fa-linkedin-in"></i></div>
                     <div className={style.socialIcon}>Facebook</div>
                 </div>
                 <span>
