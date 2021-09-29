@@ -1,21 +1,18 @@
 @import '../common/styles/saas/variables';
 
 .nav {
-  border: 1px solid; /*толщина и тип линии*/
   width: 300px;
   display: flex; /*говорит, что исопльзуем флексы*/
   justify-content: space-between; /*рассредотачиваем ссылки так, что расстояния между словами равны*/
   a {
-    color: $bgSecondColor;
+    color: #aaa;
     text-decoration: none;
+    font-family: $mainFont;
+    cursor: pointer;
+    &.active{
+      color: $bgSecondColor
+    }
   }
 
-  /* a:visited {
-          color: $bgSecondColor
-   }
 
-   a:hover {
-
-   }
- */
-}
+  }
