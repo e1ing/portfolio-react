@@ -1,0 +1,22 @@
+@import '../common/styles/saas/variables';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $headingColor;
+
+  .greeting {
+    width: 300px;
+    background-color: aliceblue;
+    text-align: left;
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+  }
+}
+
+
+
+

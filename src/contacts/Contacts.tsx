@@ -1,12 +1,10 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
 import style from './Contacts.module.scss'
 import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
 import {FontAwesomeIcon, FontAwesomeIconProps} from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faPhone, faEnvelopeOpen,faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import {IconProp} from "@fortawesome/fontawesome-svg-core";
-
+import {faEnvelopeOpen, faMapMarkerAlt, faPaperPlane, faPhone} from '@fortawesome/free-solid-svg-icons'
 
 
 type FormikErrorType = {
@@ -15,7 +13,7 @@ type FormikErrorType = {
 }
 
 
-export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
+export const Contacts = () => {
 
     const formik = useFormik({
         initialValues: {
@@ -48,7 +46,7 @@ export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
                     <div className={style.contactInfo}>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span> <FontAwesomeIcon icon={faMapMarkerAlt} /> </span>
+                                <span> <FontAwesomeIcon icon={faMapMarkerAlt}/> </span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>Address</h6>
@@ -57,7 +55,7 @@ export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
                         </div>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span> <FontAwesomeIcon icon={faPhone} /></span>
+                                <span> <FontAwesomeIcon icon={faPhone}/></span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>Phone</h6>
@@ -66,7 +64,7 @@ export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
                         </div>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span> <FontAwesomeIcon icon={faEnvelopeOpen} /></span>
+                                <span> <FontAwesomeIcon icon={faEnvelopeOpen}/></span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>E-mail</h6>
@@ -75,13 +73,13 @@ export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
                         </div>
                         <div className={style.socialIcons}>
                             <span className={`$style.socialIcon`}></span>
-                            <span> <FontAwesomeIcon icon={faPaperPlane} /> </span>
-                            <span> <FontAwesomeIcon icon={faGithub} /> </span>
-                            <span> <FontAwesomeIcon icon="fa-brands fa-linkedin-in" /> </span>
+                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
+                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
+                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
                         </div>
                     </div>
 
-                    <form onSubmit={formik.handleSubmit} className={style.formStyle} >
+                    <form onSubmit={formik.handleSubmit} className={style.formStyle}>
                         <input  {...formik.getFieldProps("name")}/>
                         <input type="email" {...formik.getFieldProps("email")}/>
                         <textarea {...formik.getFieldProps("message")}/>
