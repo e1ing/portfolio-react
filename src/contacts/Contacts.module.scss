@@ -35,25 +35,6 @@
             background: #222;
             color: #eee;
             border-radius: 4px;
-
-            .iconMap {
-              &::before {
-                font-family: 'et-line';
-                content: "\2302";
-              }
-            }
-
-            .iconPhone {
-              &::before {
-                content: "\2706";
-              }
-            }
-
-            .iconEmail {
-              &::before {
-                content: "\2709";
-              }
-            }
           }
           .infoContent{
             text-align: left;

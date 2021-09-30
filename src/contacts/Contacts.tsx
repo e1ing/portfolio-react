@@ -1,20 +1,21 @@
-import React from 'react';
+import React, { FC } from 'react';
 import style from './Contacts.module.scss'
 import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
-import github_icon from "../assets/image/github_icon.png"
-import telegram_icon from "../assets/image/telegram_icon.svg"
-import codewars_icon from "../assets/image/codewars_icon.svg"
-import linkedin_icon from '../assets/image/linkedin_icon.png'
-import socialNetworkImage from "../assets/image/social-network.png";
+import {FontAwesomeIcon, FontAwesomeIconProps} from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt, faPhone, faEnvelopeOpen,faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import {IconProp} from "@fortawesome/fontawesome-svg-core";
+
+
 
 type FormikErrorType = {
     email?: string
     message?: string
 }
 
-export const Contacts = () => {
+
+export const Contacts: FC<FontAwesomeIconProps> = ({}) => {
 
     const formik = useFormik({
         initialValues: {
@@ -47,7 +48,7 @@ export const Contacts = () => {
                     <div className={style.contactInfo}>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span className={style.iconMap}></span>
+                                <span> <FontAwesomeIcon icon={faMapMarkerAlt} /> </span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>Address</h6>
@@ -56,7 +57,7 @@ export const Contacts = () => {
                         </div>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span className={style.iconPhone}></span>
+                                <span> <FontAwesomeIcon icon={faPhone} /></span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>Phone</h6>
@@ -65,7 +66,7 @@ export const Contacts = () => {
                         </div>
                         <div className={style.infoItem}>
                             <div className={style.icon}>
-                                <span className={style.iconEmail}></span>
+                                <span> <FontAwesomeIcon icon={faEnvelopeOpen} /></span>
                             </div>
                             <div className={style.infoContent}>
                                 <h6>E-mail</h6>
@@ -74,9 +75,9 @@ export const Contacts = () => {
                         </div>
                         <div className={style.socialIcons}>
                             <span className={`$style.socialIcon`}></span>
-                            <span className={style.socialIcon}><img src={telegram_icon}/></span>
-                            <span className={style.socialIcon}><img src={codewars_icon}/></span>
-                            <span className={style.socialIcon}><img src={linkedin_icon}/></span>
+                            <span> <FontAwesomeIcon icon={faPaperPlane} /> </span>
+                            <span> <FontAwesomeIcon icon={faGithub} /> </span>
+                            <span> <FontAwesomeIcon icon="fa-brands fa-linkedin-in" /> </span>
                         </div>
                     </div>
 
