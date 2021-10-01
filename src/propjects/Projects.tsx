@@ -3,8 +3,8 @@ import style from './Projects.module.scss';
 import {Project} from './project/Project';
 import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from '../common/components/title/Title';
-import todoImage from './../assets/image/maxresdefault.jpg'
-import socialNetworkImage from  './../assets/image/social-network.png'
+import todoImage from './../assets/image/todo.jpg'
+import socialNetworkImage from  './../assets/image/social_network.jpg'
 
 export const Projects = () => {
 
@@ -29,7 +29,7 @@ export const Projects = () => {
                         styleImg= {{backgroundImage: `url(${todoImage})`}}
                         projectTitle={'Learning cards'}
                         projectDescription={'Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.'}
-                        linkUrl ={''}
+                        linkUrl = {''}
                     />
                 </div>
             </div>
