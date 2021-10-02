@@ -1,12 +1,13 @@
 @import '../common/styles/saas/variables';
+@import '../common/styles/saas/mixins';
 
 .contactsBlock {
-  min-height: 100vh;
   background-color: $bgSecondColor;
+  padding: 100px 0;
 
-  .contactsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
+  .container {
+    @include container();
+    @include flex(column, flex-start, stretch, nowrap);
 
     .contactsArea {
       display: flex;
@@ -108,6 +109,15 @@
           background: #f7f7f7;
           margin-bottom: 30px;
           resize: none;
+          &:-webkit-autofill{
+            border: 1px solid #666666;
+            -webkit-text-fill-color: #666666;
+            -webkit-box-shadow: 0 0 0 1000px #666666 inset;
+            transition: background-color 500s ease-in-out 0s;
+            &:focus{
+              border: 2px solid $bgSecondColor;
+            }
+          }
         }
       }
 
@@ -119,15 +129,7 @@
     }
 
 
-    .submitBtn {
-      width: 150px;
-      height: 50px;
-      background: $headingColor;
-      color: #eee;
-      border: none;
-      transition: all .5s;
-      border-radius: 4px;
-    }
+
 
     .contactsArea {
       display: flex;

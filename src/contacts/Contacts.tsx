@@ -1,10 +1,11 @@
-import React, {FC} from 'react';
+import React from 'react';
 import style from './Contacts.module.scss'
-import styleContainer from "../common/styles/Container.module.scss";
 import {Title} from "../common/components/title/Title";
 import {useFormik} from "formik";
-import {FontAwesomeIcon, FontAwesomeIconProps} from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelopeOpen, faMapMarkerAlt, faPaperPlane, faPhone} from '@fortawesome/free-solid-svg-icons'
+import {Button} from "../common/components/button/Button";
+import { Fade } from "react-awesome-reveal";
 
 
 type FormikErrorType = {
@@ -39,7 +40,8 @@ export const Contacts = () => {
 
     return (
         <div className={style.contactsBlock}>
-            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+            <Fade>
+            <div className={style.container}>
                 <Title text={"Contacts"}/>
                 <div className={style.contactsArea}>
 
@@ -86,8 +88,9 @@ export const Contacts = () => {
                     </form>
 
                 </div>
-                <button type="submit" className={style.submitBtn}>Send message</button>
+                <Button type="submit"> Send message</Button>
             </div>
+            </Fade>
         </div>
     )
 }

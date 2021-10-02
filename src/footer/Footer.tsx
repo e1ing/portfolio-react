@@ -1,13 +1,12 @@
 import React from 'react';
 import style from './Footer.module.scss'
-import styleContainer from "../common/styles/Container.module.scss"
 
 function Footer() {
     return (
         <div className={style.footer}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={style.container}>
                 <h2 className={style.title}>Elvira Kisling</h2>
-                <div className={`${styleContainer.container} ${style.socialIcons}`}>
+                <div className={style.socialIcons}>
                     <div className={style.socialIcon}>Telegram</div>
                     <div className={style.socialIcon}>Pinterest</div>
                     <div className={style.socialIcon}><i  className="fab fa-linkedin-in"></i></div>

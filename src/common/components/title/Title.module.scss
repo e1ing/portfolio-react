@@ -1,12 +1,10 @@
 @import '../../../common/styles/saas/variables';
-
+@import "../../styles/saas/mixins";
 
 .title {
     margin-bottom: 30px;
     position: relative;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 600;
-    font-size: 36px;
+    @include text($headingFont, 36px,  1.2, 0, $headingColor);
     position: relative;
     display: inline-block;
     padding-bottom: 10px;

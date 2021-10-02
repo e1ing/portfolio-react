@@ -1,12 +1,14 @@
 @import '../common/styles/saas/variables';
+@import '../common/styles/saas/mixins';
 
 .footer {
-  background-color: $headingColor;
+  min-height: 100px;
+  @include flex(raw, center, stretch, nowrap);
 
-  .footerContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-
+  .container {
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+    color:$headingColor;
     .title {
       color: $bgColor;
       align-items: center;
@@ -23,6 +25,7 @@
         width: 50px;
         height: 50px;
         background-color: #f3eaf3;
+
         .fa {
           display: inline-block;
           font: normal normal normal 14px/1 FontAwesome;
@@ -30,6 +33,7 @@
           text-rendering: auto;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+
           .fa-linkedin:before {
             content: "\f0e1";
           }
@@ -38,7 +42,8 @@
       }
 
     }
-    span{
+
+    span {
       color: $bgColor;
       font-size: 13px;
     }
