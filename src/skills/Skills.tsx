@@ -1,13 +1,12 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from "../common/styles/Container.module.scss"
 import Skill from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
 
 function Skills() {
     return (
-        <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+        <div id="skills" className={style.skillsBlock}>
+            <div className={style.сontainer}>
                 <Title text ={"Skills"}/>
                 <div className={style.skills}>
                     <Skill title={"JavaScript"} description="JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much ..."/>

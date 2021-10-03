@@ -39,7 +39,7 @@ export const Contacts = () => {
     })
 
     return (
-        <div className={style.contactsBlock}>
+        <div id="contacts" className={style.contactsBlock}>
             <Fade>
             <div className={style.container}>
                 <Title text={"Contacts"}/>
