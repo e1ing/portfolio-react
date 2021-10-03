@@ -3,7 +3,7 @@
 
 .mainBlock {
   min-height: 100vh;
-  @include flex(row, center, center, nowrap);
+  @include flex(column, center, center, nowrap);
   padding: 100px 0;
   background-color: $headingColor;
 
@@ -46,9 +46,16 @@
         margin-top: 50px;
       }
 
-      img {
+      .image {
         width: 300px;
         height: 400px;
+        background-image: url("../assets/image/main_photo.jpg");
+        background-position: 80% 0;
+        @media screen and (max-width: 600px){
+          height: 360px;
+          width:260px;
+          transition: .5s;
+        }
       }
     }
   }

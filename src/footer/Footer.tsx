@@ -1,5 +1,7 @@
 import React from 'react';
 import style from './Footer.module.scss'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
     return (
@@ -7,10 +9,10 @@ function Footer() {
             <div className={style.container}>
                 <h2 className={style.title}>Elvira Kisling</h2>
                 <div className={style.socialIcons}>
-                    <div className={style.socialIcon}>Telegram</div>
-                    <div className={style.socialIcon}>Pinterest</div>
-                    <div className={style.socialIcon}><i  className="fab fa-linkedin-in"></i></div>
-                    <div className={style.socialIcon}>Facebook</div>
+                    <span className={`$style.socialIcon`}></span>
+                    <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
+                    <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
+                    <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
                 </div>
                 <span>
                     ©2021 All rights reserved

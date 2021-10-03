@@ -73,12 +73,7 @@ export const Contacts = () => {
                                 <h5>elvira.kisling@gmail.com</h5>
                             </div>
                         </div>
-                        <div className={style.socialIcons}>
-                            <span className={`$style.socialIcon`}></span>
-                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
-                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
-                            <span> <FontAwesomeIcon icon={faPaperPlane}/> </span>
-                        </div>
+
                     </div>
 
                     <form onSubmit={formik.handleSubmit} className={style.formStyle}>

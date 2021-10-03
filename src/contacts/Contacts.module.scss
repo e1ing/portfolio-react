@@ -43,51 +43,6 @@
             color: #666;
           }
         }
-
-        .socialIcons {
-          display: flex;
-          justify-content: space-between;
-          box-sizing: border-box;
-          padding: 0;
-          margin: 0;
-
-          .socialIcon {
-            margin: 0 2px;
-            font-size: 20px;
-            text-align: center;
-            transition: all .5s;
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            border-radius: 50%;
-            border: 1px solid #222;
-
-            .gitHub {
-              &::before {
-                content: "\f09b";
-              }
-            }
-
-            .codewars {
-              &::before {
-                content: "\f09b";
-              }
-            }
-
-            .linkedin {
-              &::before {
-                content: "\f09b";
-              }
-            }
-
-            .telegram {
-              &::before {
-                content: "\f09b";
-              }
-            }
-          }
-        }
       }
 
       .formStyle {

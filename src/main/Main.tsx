@@ -27,12 +27,14 @@ function Main() {
                     <div className={style.greeting}>
                         <span>Hi there,</span>
                         <span>I am Elvira Kisling</span>
-                        {/* <span>Frontend developer</span>*/}
                         <ReactTypingEffect text={"Frontend developer"}/>
                     </div>
 
                     <Tilt className={"Tilt"}>
-                        <div className={style.photo}><img src={main_photo}/></div>
+                        <div className={style.photo}>
+                        <div className={style.image}>
+                        </div>
+                        </div>
                     </Tilt>
                 </div>
             </ Fade>

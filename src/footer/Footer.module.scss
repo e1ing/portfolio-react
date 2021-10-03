@@ -4,17 +4,61 @@
 .footer {
   min-height: 100px;
   @include flex(raw, center, stretch, nowrap);
+  background-color: $headingColor;
 
   .container {
     @include container();
     @include flex(column, flex-start, center, nowrap);
-    color:$headingColor;
+
     .title {
-      color: $bgColor;
+      @include text($headingFont, 25px, 400, 1.2, $bgSecondColor);
       align-items: center;
     }
-
     .socialIcons {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+
+      .socialIcon {
+        margin: 0 2px;
+        font-size: 20px;
+        text-align: center;
+        transition: all .5s;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        border: 1px solid #222;
+
+        .gitHub {
+          &::before {
+            content: "\f09b";
+          }
+        }
+
+        .codewars {
+          &::before {
+            content: "\f09b";
+          }
+        }
+
+        .linkedin {
+          &::before {
+            content: "\f09b";
+          }
+        }
+
+        .telegram {
+          &::before {
+            content: "\f09b";
+          }
+        }
+      }
+    }
+    /*.socialIcons {
       width: 250px;
       background-color: $bgColor;
       display: flex;
@@ -41,11 +85,11 @@
 
       }
 
-    }
+    }*/
 
     span {
-      color: $bgColor;
-      font-size: 13px;
+      @include text($headingFont, 14px, 400, 1.2, $bgSecondColor);
+      margin-bottom: 14px;
     }
   }
 }

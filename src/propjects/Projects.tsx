@@ -5,11 +5,13 @@ import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from '../common/components/title/Title';
 import todoImage from './../assets/image/todo.jpg'
 import socialNetworkImage from  './../assets/image/social_network.jpg'
+import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
 
     return (
         <div id="projects" className={style.projectsBlock}>
+            <Fade>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
@@ -33,6 +35,7 @@ export const Projects = () => {
                     />
                 </div>
             </div>
+            </Fade>
         </div>
 
     )
