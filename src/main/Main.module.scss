@@ -18,6 +18,7 @@
 
   .container {
     @include container();
+    @include flex (row, center, center, nowrap);
 
     .greeting {
       text-align: left;
@@ -51,6 +52,7 @@
         height: 400px;
         background-image: url("../assets/image/main_photo.jpg");
         background-position: 80% 0;
+        background-size: cover;
         @media screen and (max-width: 600px){
           height: 360px;
           width:260px;

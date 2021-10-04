@@ -10,16 +10,14 @@
     @include flex(column, flex-start, stretch, nowrap);
 
     .contactsArea {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex(row, space-between, stretch, nowrap);
       width: 100%;
 
       .contactInfo {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        margin-left: 70px;
+        margin-left: 10px;
         color: #666;
 
         .infoItem {
@@ -37,45 +35,52 @@
             color: #eee;
             border-radius: 4px;
           }
-          .infoContent{
+
+          .infoContent {
             text-align: left;
             margin-left: 70px;
             color: #666;
           }
         }
       }
+.formSubmit {
+  overflow: hidden;
+  width: 100%;
+  @include flex(column, center, left, nowrap);
+  margin: 40px;
+  .formStyle {
+    overflow: hidden;
 
-      .formStyle {
-        overflow: hidden;
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #f7f7f7;
+      margin-bottom: 30px;
+    }
 
-        input {
-          width: 80%;
-          padding: 10px;
-          border: none;
-          background: #f7f7f7;
-          margin-bottom: 30px;
-        }
+    textarea {
+      width: 100%;
+      height: 140px;
+      padding: 10px;
+      border: none;
+      background: #f7f7f7;
+      margin-bottom: 30px;
+      resize: none;
 
-        textarea {
-          width: 80%;
-          height: 140px;
-          padding: 10px;
-          border: none;
-          background: #f7f7f7;
-          margin-bottom: 30px;
-          resize: none;
-          &:-webkit-autofill{
-            border: 1px solid #666666;
-            -webkit-text-fill-color: #666666;
-            -webkit-box-shadow: 0 0 0 1000px #666666 inset;
-            transition: background-color 500s ease-in-out 0s;
-            &:focus{
-              border: 2px solid $bgSecondColor;
-            }
-          }
+      &:-webkit-autofill {
+        border: 1px solid #666666;
+        -webkit-text-fill-color: #666666;
+        -webkit-box-shadow: 0 0 0 1000px #666666 inset;
+        transition: background-color 500s ease-in-out 0s;
+
+        &:focus {
+          border: 2px solid $bgSecondColor;
         }
       }
-
+    }
+  }
+}
       @media screen and (max-width: 470px) {
         .contactsArea {
           width: 100%;
@@ -83,14 +88,6 @@
       }
     }
 
-
-
-
-    .contactsArea {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
 }
 

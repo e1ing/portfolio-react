@@ -5,10 +5,10 @@ import {Link} from "react-scroll";
 
 function Nav() {
     return (
-        <div className={style.nav}>
+        <ul className={style.nav}>
             <Link
                 activeClass={style.active}
-                to={"main"}
+                to="main"
                 spy={true}
                 offset={1}
                 duration={500}
@@ -35,7 +35,7 @@ function Nav() {
                 offset={1}
                 duration={500}
             > Contacts </Link>
-        </div>
+        </ul>
 
 
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Main.module.scss';
-import main_photo from "../assets/image/main_photo.jpg";
 import Particles from 'react-particles-js';
 import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
