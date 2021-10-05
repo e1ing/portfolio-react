@@ -23,7 +23,7 @@
       @include text($mainFont, 16px, 400, 1.2, $textColor);
       text-decoration: none;
       cursor: pointer;
-
+      z-index: 2;
       &:hover {
         text-decoration: none;
         color: $bgSecondColor

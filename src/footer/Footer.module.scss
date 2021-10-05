@@ -88,7 +88,7 @@
     }*/
 
     span {
-      @include text($headingFont, 14px, 400, 1.2, $bgSecondColor);
+      @include text($mainFont, 10px, 400, 1.2, $bgSecondColor);
       margin-bottom: 14px;
     }
   }

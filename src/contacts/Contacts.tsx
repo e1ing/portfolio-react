@@ -12,9 +12,6 @@ type FormikErrorType = {
     email?: string
     message?: string
 }
-/*type ContactsPropsType = {
-    id: string
-}*/
 
 export const Contacts = () => {
 

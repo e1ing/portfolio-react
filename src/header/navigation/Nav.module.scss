@@ -4,6 +4,7 @@
 .nav {
   width: 340px;
   @include flex (row, space-between, stretch, nowrap);
+  margin-right: 20px;
   a {
     @include text ($mainFont, 16px, 400, 1.2, $textColor);
     text-decoration: none;
@@ -13,7 +14,7 @@
       color: $bgSecondColor
     }
   }
-
+  z-index: 2;
   .active{
     color: $bgSecondColor
   }
