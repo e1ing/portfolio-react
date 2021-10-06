@@ -8,6 +8,7 @@
   flex-direction: column; /*to change main axis*/
   align-items: center;
   padding: 20px;
+  margin-bottom: 20px;
 
   .skillTitle {
     @include text($mainFont, 22px, 700, 1.2, $headingColor);
