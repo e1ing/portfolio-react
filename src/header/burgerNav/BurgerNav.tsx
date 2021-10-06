@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import style from './BurgerNav.module.scss';
 import {Link} from "react-scroll";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 function BurgerNav() {
@@ -11,7 +13,8 @@ function BurgerNav() {
     return (
         <div className={style.burgerNav}>
             <div className={menuIsOpen ?
-                `${style.burgerNavItems} ${style.show}` : style.burgerNavItems}>
+                `${style.burgerNavItems} ${style.show}`
+                : style.burgerNavItems}>
                 <Link
                     activeClass={style.active}
                     to={"main"}
@@ -42,7 +45,9 @@ function BurgerNav() {
                     duration={500}
                 > Contacts </Link>
             </div>
-            <div onClick={onBurgerBtnClick} className={style.burgerBtn}></div>
+            <div onClick={onBurgerBtnClick} className={style.burgerBtn}>
+                <FontAwesomeIcon icon={faBars}/>
+            </div>
         </div>
 
     );
