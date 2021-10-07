@@ -50,8 +50,8 @@ export const Contacts = () => {
                                     <span> <FontAwesomeIcon icon={faMapMarkerAlt}/> </span>
                                 </div>
                                 <div className={style.infoContent}>
-                                    <h6>Address</h6>
-                                    <h5>21 Jumpe Street</h5>
+                                    <p>Location</p>
+                                    <p>Ukraine, Kyiv</p>
                                 </div>
                             </div>
                             <div className={style.infoItem}>
@@ -59,8 +59,8 @@ export const Contacts = () => {
                                     <span> <FontAwesomeIcon icon={faPhone}/></span>
                                 </div>
                                 <div className={style.infoContent}>
-                                    <h6>Phone</h6>
-                                    <h5>+2000323232</h5>
+                                    <p>Phone</p>
+                                    <p>80008889977</p>
                                 </div>
                             </div>
                             <div className={style.infoItem}>
@@ -68,8 +68,8 @@ export const Contacts = () => {
                                     <span> <FontAwesomeIcon icon={faEnvelopeOpen}/></span>
                                 </div>
                                 <div className={style.infoContent}>
-                                    <h6>E-mail</h6>
-                                    <h5>elvira.kisling@gmail.com</h5>
+                                    <p>E-mail</p>
+                                    <p>elvira.kisling@gmail.com</p>
                                 </div>
                             </div>
 

@@ -5,6 +5,7 @@ import styleContainer from '../common/styles/Container.module.scss'
 import {Title} from '../common/components/title/Title';
 import todoImage from './../assets/image/todo.jpg'
 import socialNetworkImage from  './../assets/image/social_network.jpg'
+import cardsImage from  './../assets/image/cards_photo.jpeg'
 import {Fade} from "react-awesome-reveal";
 
 export const Projects = () => {
@@ -28,7 +29,7 @@ export const Projects = () => {
                         linkUrl ={''}
                     />
                     <Project
-                        styleImg= {{backgroundImage: `url(${todoImage})`}}
+                        styleImg= {{backgroundImage: `url(${cardsImage})`}}
                         projectTitle={'Learning cards'}
                         projectDescription={'Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.'}
                         linkUrl = {''}

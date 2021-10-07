@@ -18,31 +18,31 @@ function BurgerNav() {
                 <Link
                     activeClass={style.active}
                     to={"main"}
-                    spy={true}
+                    smooth={true}
                     offset={1}
-                    duration={500}
+                    duration={5000}
                 > Main </Link>
                 <Link
                     activeClass={style.active}
                     to={"skills"}
-                    spy={true}
+                    smooth={true}
                     offset={1}
-                    duration={500}
+                    duration={5000}
                 > Skills </Link>
 
                 <Link
                     activeClass={style.active}
                     to={"projects"}
-                    spy={true}
+                    smooth={true}
                     offset={1}
-                    duration={500}
+                    duration={5000}
                 > Projects </Link>
                 <Link
                     activeClass={style.active}
                     to={"contacts"}
-                    spy={true}
+                    smooth={true}
                     offset={1}
-                    duration={500}
+                    duration={5000}
                 > Contacts </Link>
             </div>
             <div onClick={onBurgerBtnClick} className={style.burgerBtn}>
