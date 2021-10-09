@@ -3,8 +3,8 @@
 @mixin text($fontFamily, $fontSize,  $fontWeight, $lineHeight, $color){
   font-family: $fontFamily;
   font-size:$fontSize;
-  line-height: $lineHeight;
   font-weight: $fontWeight;
+  line-height: $lineHeight;
   color: $color;
 }
 

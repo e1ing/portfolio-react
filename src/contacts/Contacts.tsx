@@ -76,9 +76,9 @@ export const Contacts = () => {
                         </div>
                         <div className={style.formSubmit}>
                             <form onSubmit={formik.handleSubmit} className={style.formStyle}>
-                                <input  {...formik.getFieldProps("name")}/>
-                                <input type="email" {...formik.getFieldProps("email")}/>
-                                <textarea {...formik.getFieldProps("message")}/>
+                                <input  placeholder="Name*"{...formik.getFieldProps("name")}/>
+                                <input placeholder="Email*" type="email" {...formik.getFieldProps("email")}/>
+                                <textarea placeholder="Message*"{...formik.getFieldProps("message")}/>
                             </form>
                             <Button type="submit"> Send message</Button>
                         </div>

@@ -8,88 +8,40 @@
 
   .container {
     @include container();
-    @include flex(column, flex-start, center, nowrap);
+    @include flex(column, space-between, center, nowrap);
 
     .title {
-      @include text($headingFont, 25px, 400, 1.2, $bgSecondColor);
+      @include text($headingFont, 20px, 300, 1.2, $bgSecondColor);
       align-items: center;
+      margin: 10px 0px 0px;
     }
     .socialIcons {
       display: flex;
-      justify-content: space-between;
+      @include flex (row, center, center, nowrap);
       box-sizing: border-box;
       padding: 0;
-      margin: 0;
+      margin: 5px;
 
-      .socialIcon {
+      .iconStyle {
         margin: 0 2px;
-        font-size: 20px;
+        font-size: 12px;
         text-align: center;
-        transition: all .5s;
         cursor: pointer;
         width: 40px;
         height: 40px;
         line-height: 40px;
         border-radius: 50%;
-        border: 1px solid #222;
-
-        .gitHub {
-          &::before {
-            content: "\f09b";
-          }
-        }
-
-        .codewars {
-          &::before {
-            content: "\f09b";
-          }
-        }
-
-        .linkedin {
-          &::before {
-            content: "\f09b";
-          }
-        }
-
-        .telegram {
-          &::before {
-            content: "\f09b";
-          }
+        transition: all .5s;
+        &:hover{
+         /* color: #111;*/
+          background: $bgSecondColor;
         }
       }
     }
-    /*.socialIcons {
-      width: 250px;
-      background-color: $bgColor;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .socialIcon {
-        width: 50px;
-        height: 50px;
-        background-color: #f3eaf3;
-
-        .fa {
-          display: inline-block;
-          font: normal normal normal 14px/1 FontAwesome;
-          font-size: inherit;
-          text-rendering: auto;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-
-          .fa-linkedin:before {
-            content: "\f0e1";
-          }
-        }
-
-      }
-
-    }*/
 
     span {
       @include text($mainFont, 10px, 400, 1.2, $bgSecondColor);
-      margin-bottom: 14px;
+      padding-bottom: 10px;
     }
   }
 }

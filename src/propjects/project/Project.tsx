@@ -11,7 +11,7 @@ type ProjectType = {
 export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescription, linkUrl}) => {
     return (
         <div className={style.project} style={styleImg}>
-            <div className={style.imgContainer} style={style}>
+            <div className={style.imgContainer}>
                 <a href={linkUrl} className={style.link}>Details</a>
             </div>
             <div className={style.projectInfo}>
