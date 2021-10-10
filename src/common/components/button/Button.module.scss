@@ -4,10 +4,15 @@
     width: 150px;
     height: 50px;
     background: $headingColor;
-    color: #eee;
+    color: $bgSecondColor;
     border: none;
     transition: all .5s;
     border-radius: 4px;
+    font-family: $mainFont;
+    &:hover{
+        background: #333;
+        cursor: pointer;
+    }
 }
 
 

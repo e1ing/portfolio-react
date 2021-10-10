@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faEnvelopeOpen, faMapMarkerAlt, faPaperPlane, faPhone} from '@fortawesome/free-solid-svg-icons'
 import {Button} from "../common/components/button/Button";
 import {Fade} from "react-awesome-reveal";
+import axios from "axios";
 
 
 type FormikErrorType = {
@@ -32,10 +33,18 @@ export const Contacts = () => {
             return errors;
         },
         onSubmit: values => {
-            // dispatch(loginTC(values))
+            axios.post("http://localhost:3010/sendMessage", {
+                name: formik.values.name,
+                email: formik.values.email,
+                message: formik.values.message,
+            })
+                .then(() => {
+                    alert("Your message has been sent")
+                })
             formik.resetForm();
-        },
-    })
+        }
+    });
+
 
     return (
         <div className={style.contactsBlock} id="contacts">
@@ -80,7 +89,7 @@ export const Contacts = () => {
                                 <input placeholder="Email*" type="email" {...formik.getFieldProps("email")}/>
                                 <textarea placeholder="Message*"{...formik.getFieldProps("message")}/>
                             </form>
-                            <Button type="submit"> Send message</Button>
+                            <Button type="submit" > Send message</Button>
                         </div>
                     </div>
 
