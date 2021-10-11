@@ -10,6 +10,7 @@ import axios from "axios";
 
 
 type FormikErrorType = {
+    name?: string
     email?: string
     message?: string
 }
@@ -24,16 +25,22 @@ export const Contacts = () => {
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
+            if (!values.name) {
+                errors.name = 'Firstname is required.';
+            }
             if (!values.email) {
-                errors.email = 'Required';
+                errors.email = 'Valid email is required.';
             } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
             }
-
+            if (!values.message) {
+                errors.message = 'Message is required.';
+            }
             return errors;
         },
         onSubmit: values => {
-            axios.post("http://localhost:3010/sendMessage", {
+            console.log("Inside submit")
+            axios.post("https://email-smtp-nodejs.herokuapp.com/senMessage", {
                 name: formik.values.name,
                 email: formik.values.email,
                 message: formik.values.message,
@@ -85,11 +92,32 @@ export const Contacts = () => {
                         </div>
                         <div className={style.formSubmit}>
                             <form onSubmit={formik.handleSubmit} className={style.formStyle}>
-                                <input  placeholder="Name*"{...formik.getFieldProps("name")}/>
-                                <input placeholder="Email*" type="email" {...formik.getFieldProps("email")}/>
-                                <textarea placeholder="Message*"{...formik.getFieldProps("message")}/>
+                                <input
+                                    placeholder="Name*"
+                                    name={"name"}
+                                    onChange={formik.handleChange}
+                                    value={formik.values.name}
+                                />
+
+
+                                <input
+                                    placeholder="Email*"
+                                    type="email"
+                                    name="email"
+                                    onChange={formik.handleChange}
+                                    value={formik.values.email}
+                                />
+                                {formik.touched.email && formik.errors.email &&
+                                <div style={{color:"#a94442"}}>{formik.errors.email}</div>}
+                                <textarea
+                                    placeholder="Message*"
+                                    name={"message"}
+                                    value={formik.values.message}
+                                    onChange={formik.handleChange}
+
+                                />
+                                <Button type="submit" > Send message</Button>
                             </form>
-                            <Button type="submit" > Send message</Button>
                         </div>
                     </div>
 
