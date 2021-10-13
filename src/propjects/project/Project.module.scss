@@ -1,7 +1,78 @@
 @import '../../common/styles/saas/variables';
 @import '../../common/styles/saas/mixins';
 
+
 .project {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgSecondColor;
+  margin: 20px;
+
+  .overlayStyle #overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s;
+
+    .v {
+      &:before, after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        background: #eee;
+        transition: all .5s;
+
+        &:before {
+          bottom: 10%;
+        }
+      }
+
+      &:after {
+        top: 10%;
+      }
+
+    }
+
+    .x {
+      &:before, after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        background: #eee;
+        transition: all .5s;
+
+        &:before {
+          left: 10%
+        }
+        &:after {
+          right: 10%;
+        }
+      }
+      }
+
+    .vMiddle {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      transform: translate(0%, -50%);
+    }
+
+  }
+}
+
+
+/*.project {
   width: 380px;
   display: flex;
   flex-direction: column;
@@ -33,7 +104,7 @@
       background-color: $bgColor;
       padding: 10px 20px;
       position: relative;
-      /*z-index: 1px;*/
+      !*z-index: 1px;*!
     }
   }
 
@@ -53,7 +124,7 @@
     }
 
   }
-}
+}*/
 
 
 

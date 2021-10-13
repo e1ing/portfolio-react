@@ -17,19 +17,19 @@ export const Projects = () => {
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
                     <Project
-                        styleImg= {{backgroundImage: `url(${socialNetworkImage})`}}
+                        styleImg= {socialNetworkImage}
                         projectTitle={'Social Network'}
                         projectDescription={'A social network is a social.'}
                         linkUrl ={''}
                     />
                     <Project
-                        styleImg= {{backgroundImage: `url(${todoImage})`}}
+                        styleImg= {todoImage}
                         projectTitle={'Todolist'}
                         projectDescription={'Most typically, they’re organised in order of priority.'}
                         linkUrl ={''}
                     />
                     <Project
-                        styleImg= {{backgroundImage: `url(${cardsImage})`}}
+                        styleImg= {cardsImage}
                         projectTitle={'Learning cards'}
                         projectDescription={'Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.'}
                         linkUrl = {''}
