@@ -8,123 +8,96 @@
   flex-direction: column;
   background-color: $bgSecondColor;
   margin: 20px;
+  position: relative;
 
-  .overlayStyle #overlay {
+  .overlayStyle {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    background: rgba(0, 0, 0, .6);
-    opacity: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
     overflow: hidden;
-    transition: all .5s;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .v {
-      &:before, after {
+      &::before, &::after {
         content: '';
         height: 1px;
+
+        height: 100%;
         position: absolute;
         left: 50%;
         right: 50%;
-        background: #eee;
+        transform: translateX(-50%);
+        background: $secondTextColor;
         transition: all .5s;
 
-        &:before {
+        &::before {
           bottom: 10%;
         }
       }
 
-      &:after {
+      &::after {
         top: 10%;
+      }
+
+      &:hover::after {
+        width: 80%;
+        right: 80%;
       }
 
     }
 
     .x {
-      &:before, after {
+      &::before, &::after {
         content: '';
         height: 1px;
         position: absolute;
         left: 50%;
         right: 50%;
+
+        height: 100%;
         background: #eee;
         transition: all .5s;
 
-        &:before {
+        &::before {
           left: 10%
         }
-        &:after {
+
+        &::after {
           right: 10%;
         }
       }
+
+      &:hover::after {
+        left: 80%;
+        right: 80%;
       }
 
-    .vMiddle {
-      position: absolute;
-      width: 100%;
-      top: 50%;
-      left: 0;
-      transform: translate(0%, -50%);
-    }
+      .vMiddle {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
 
+        .heading {
+          @include text($mainFont, 25px,  600, 1.2, $secondTextColor)
+        }
+      }
+
+
+    }
   }
 }
 
 
-/*.project {
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-  background-color: $bgSecondColor;
-  margin: 20px;
-  .imgContainer {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: $headingColor;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.4;
-    }
-
-    .link {
-      background-color: $bgColor;
-      padding: 10px 20px;
-      position: relative;
-      !*z-index: 1px;*!
-    }
-  }
-
-  .projectInfo {
-    padding: 25px 20px;
-    background: $bgSecondColor;
-
-    .projectTitle {
-      @include text($headingFont, 22px, 700, 1.2, $headingColor);
-      margin-bottom: 15px;
-    }
-
-    .projectDescription {
-      @include text($mainFont, 14px, 400, 1.6,  $textColor);
-      word-spacing: 1px;
-      margin: 0;
-    }
-
-  }
-}*/
 
 
 

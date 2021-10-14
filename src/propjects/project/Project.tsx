@@ -14,16 +14,16 @@ export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescrip
     return (
         <div className={style.project}>
             <img src={styleImg} alt={"image"}/>
-            <div id="overlay" className={style.overlayStyle}>
+            <div  className={style.overlayStyle}>
                 <span className={style.v}></span>
                 <span className={style.x}></span>
                 <div className={style.vMiddle}>
                     <a href={styleImg}>
                         <span className={style.icon}>
-                            <FontAwesomeIcon icon={faCrosshairs}/>
+                            <FontAwesomeIcon icon={faCrosshairs} style={{color: "#eee"}}/>
                         </span>
                     </a>
-                    <p>Details</p>
+                    <p className={style.heading}>Details</p>
                 </div>
             </div>
         </div>

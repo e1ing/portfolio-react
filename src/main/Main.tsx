@@ -29,12 +29,12 @@ function Main() {
                         <ReactTypingEffect text={"Frontend developer"}/>
                     </div>
 
-                    <Tilt className={"Tilt"}>
+                   {/* <Tilt className={"Tilt"}>
                         <div className={style.photo}>
                         <div className={style.image}>
                         </div>
                         </div>
-                    </Tilt>
+                    </Tilt>*/}
                 </div>
             </ Fade>
         </div>
