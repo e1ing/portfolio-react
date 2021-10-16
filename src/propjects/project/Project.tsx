@@ -15,10 +15,11 @@ export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescrip
         <div className={style.project}>
             <img className={style.imageStyle} src={styleImg} alt={"image"}/>
             <div  className={style.overlayStyle}>
+
                 <span className={style.horizontal}></span>
                 <span className={style.vertical}></span>
                 <div className={style.link}>
-                    <a className={style.a} href={styleImg}>
+                    <a className={style.a} href={styleImg}> {/*change on github link*/}
                             <FontAwesomeIcon icon={faCrosshairs} style={{color: "#eee"}}/>
                     </a>
                     <p className={style.heading}>Details</p>
