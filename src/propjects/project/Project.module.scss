@@ -8,9 +8,28 @@
   flex-direction: column;
   background-color: $bgSecondColor;
   margin: 20px;
-  position: relative;
 
-  .overlayStyle {
+  .imageStyle {
+    width: 100%;
+    height: auto;
+
+  }
+
+}
+
+
+/*.project {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  background-color: $bgSecondColor;
+  margin: 20px;
+  position: relative;
+  .imageStyle {
+    position: relative;
+    opacity: 1;
+  }
+  .overlayStyle:hover {
     position: absolute;
     top: 15px;
     left: 15px;
@@ -20,9 +39,9 @@
     opacity: 0;
     overflow: hidden;
     transition: all 0.5s;
-    /*display: flex;
+    !*display: flex;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;*!
 
     .v {
       position: absolute;
@@ -32,30 +51,28 @@
       bottom: 0;
       background: none;
 
-      &::before, &::after {
+      &:after, :before {
+        left: 10%;
+        right: 10%;
+      }
+
+      &:before, &:after {
         content: '';
         height: 1px;
-
-        height: 100%;
         position: absolute;
         left: 50%;
         right: 50%;
-        transform: translateX(-50%);
+       !* transform: translateX(-50%);*!
         background: $secondTextColor;
         transition: all .5s;
-
-        &::before {
-          bottom: 10%;
-        }
       }
 
-      &::after {
+      &:after {
         top: 10%;
       }
 
-      &:hover::after {
-        width: 80%;
-        right: 80%;
+      &:before {
+        bottom: 10%;
       }
 
     }
@@ -67,30 +84,20 @@
       right: 0;
       bottom: 0;
       background: none;
-
-      &::before, &::after {
+      &:before, &:after {
         content: '';
         height: 1px;
         position: absolute;
         left: 50%;
         right: 50%;
-
-        height: 100%;
-        background: #eee;
+        background: $secondTextColor;
         transition: all .5s;
-
-        &::before {
-          left: 10%
-        }
-
-        &::after {
-          right: 10%;
-        }
       }
-
-      &:hover::after {
-        left: 80%;
-        right: 80%;
+      &:after {
+        right: 10%;
+      }
+      &:before {
+        left: 10%;
       }
 
       .vMiddle {
@@ -99,7 +106,14 @@
         top: 50%;
         left: 0;
         transform: translate(0%, -50%);
-
+        .a{
+          color: #eee;
+          font-size: 25px;
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          margin: auto;
+        }
         .heading {
           @include text($mainFont, 25px,  600, 1.2, $secondTextColor);
         }
@@ -108,7 +122,7 @@
 
     }
   }
-}
+}*/
 
 
 

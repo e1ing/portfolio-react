@@ -13,15 +13,13 @@ type ProjectType = {
 export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescription, linkUrl}) => {
     return (
         <div className={style.project}>
-            <img src={styleImg} alt={"image"}/>
+            <img className={style.imageStyle} src={styleImg} alt={"image"}/>
             <div  className={style.overlayStyle}>
-                <span className={style.v}></span>
-                <span className={style.x}></span>
-                <div className={style.vMiddle}>
-                    <a href={styleImg}>
-                        <span className={style.icon}>
+                <span className={style.horizontal}></span>
+                <span className={style.vertical}></span>
+                <div className={style.link}>
+                    <a className={style.a} href={styleImg}>
                             <FontAwesomeIcon icon={faCrosshairs} style={{color: "#eee"}}/>
-                        </span>
                     </a>
                     <p className={style.heading}>Details</p>
                 </div>
