@@ -2,8 +2,6 @@
 
 .container{
     height: 100%;
-
-
     display: flex; /*по умолчанию главная ось - raw*/
     align-items: center; /*двигает содержимае по второстепенной оси по центру*/
     justify-content: space-between;
