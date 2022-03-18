@@ -7,167 +7,26 @@
   display: flex;
   flex-direction: column;
   background-color: $bgSecondColor;
-  margin: 20px;
-
-  .imageStyle {
-    width: 100%;
-    height: auto;
-
-  }
+  margin: 15px 0;
 
   .overlayStyle {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 1;
-    overflow: hidden;
-    transition: all 0.5s;
-    @include flex(row, center, center, nowrap);
-
-    .horizontal {
-
-    }
-
-    .vertical {
+    .imageStyle {
       width: 100%;
-      height: 100%;
-      posotion: absolute;
-
-      &:before, &:after {
-        content: '';
-        height: 1px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        transform: translateX(-50%);
-        background: $secondTextColor;
-        transition: all .5s;
-      }
+      height: auto;
     }
 
     .link {
-
       .a {
-
-      }
-
-      .heading {
-
+        .heading {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
-
 }
 
 
-/*.project {
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-  background-color: $bgSecondColor;
-  margin: 20px;
-  position: relative;
-  .imageStyle {
-    position: relative;
-    opacity: 1;
-  }
-  .overlayStyle:hover {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-    !*display: flex;
-    align-items: center;
-    justify-content: center;*!
-
-    .v {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: none;
-
-      &:after, :before {
-        left: 10%;
-        right: 10%;
-      }
-
-      &:before, &:after {
-        content: '';
-        height: 1px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-       !* transform: translateX(-50%);*!
-        background: $secondTextColor;
-        transition: all .5s;
-      }
-
-      &:after {
-        top: 10%;
-      }
-
-      &:before {
-        bottom: 10%;
-      }
-
-    }
-
-    .x {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: none;
-      &:before, &:after {
-        content: '';
-        height: 1px;
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        background: $secondTextColor;
-        transition: all .5s;
-      }
-      &:after {
-        right: 10%;
-      }
-      &:before {
-        left: 10%;
-      }
-
-      .vMiddle {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 0;
-        transform: translate(0%, -50%);
-        .a{
-          color: #eee;
-          font-size: 25px;
-          cursor: pointer;
-          width: 50px;
-          height: 50px;
-          margin: auto;
-        }
-        .heading {
-          @include text($mainFont, 25px,  600, 1.2, $secondTextColor);
-        }
-      }
-
-
-    }
-  }
-}*/
 
 
 
