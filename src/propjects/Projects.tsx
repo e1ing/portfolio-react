@@ -20,25 +20,21 @@ export const Projects = () => {
                     <Project
                         styleImg= {socialNetworkImage}
                         projectTitle={'Social Network'}
-                        projectDescription={'A social network is a social.'}
                         linkUrl ={'https://github.com/e1ing/social-network-ts'}
                     />
                     <Project
                         styleImg= {todoImage}
                         projectTitle={'Todolist'}
-                        projectDescription={'Most typically, they’re organised in order of priority.'}
                         linkUrl ={'https://github.com/e1ing/todolist-ts-v'}
                     />
                     <Project
                         styleImg= {cardsImage}
                         projectTitle={'Learning cards'}
-                        projectDescription={'Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.Most typically, they’re organised in order of priority.'}
                         linkUrl = {'https://github.com/e1ing/learning-cards'}
                     />
                     <Project
                         styleImg= {rickandmorty}
                         projectTitle={'Rick and Morty'}
-                        projectDescription={'Rick and Morty.....'}
                         linkUrl ={'https://github.com/e1ing/rick-and-morty-catalog'}
                     />
                 </div>

@@ -1,7 +1,6 @@
 @import '../../common/styles/saas/variables';
 @import '../../common/styles/saas/mixins';
 
-
 .wrapper {
   width: 380px;
   display: flex;
@@ -10,21 +9,33 @@
   margin: 15px 0;
 
   .boxImg {
+    position: relative;
     width: 400px;
     height: 300px;
     font-family: $mainFont;
     transition: 0.5s;
     overflow: hidden;
 
-    .imageStyle {
-      width: 100%;
-      height: 100%;
-
-      &:hover {
-        & container::before {
-          transform: translateX(92%) rotate(45deg) scale(2);
-        }
+    &:hover .container {
+      &::before {
+        transform: translateX(92%) rotate(45deg) scale(2);
+        transition: 0.5s;
+        opacity: .6;
       }
+
+      &::after {
+        transform: translateX(-25%) rotate(45deg) scale(2);
+        transition: 0.5s;
+        opacity: .6;
+      }
+    }
+
+    &:hover .projTitle {
+      transform: scale(1);
+    }
+
+    .imageStyle {
+      height: 300px;
 
       &:hover {
         transform: rotate(-30deg) scale(2);
@@ -35,7 +46,9 @@
     .container {
       width: 100%;
       height: 100%;
-      position: absolute;
+      posotion: absolute;
+      top: 0;
+      left: 0;
 
       &:before, :after {
         content: '';
@@ -46,6 +59,7 @@
         left: 0;
         background-color: #666666;
         opacity: 0.1;
+        transition: 1s;
       }
 
       &:before {
@@ -58,16 +72,61 @@
 
     }
 
-    .link {
+    .text {
+      position: absolute;
+      top: 20%;
       color: $headingColor;
       text-align: center;
-      text-decoration: none;
+      z-index: 10;
+      /* opacity: 0;
+       transition: .2s ease-in-out;*/
 
-      .heading {
-        margin-bottom: 20px;
+      &:hover {
         transform: scale(1);
+        opacity: 1;
         transition: .5s;
+      }
 
+      .projTitle {
+        margin-bottom: 20px;
+        font-size: 30px;
+        transform: scale(0);
+        transition: .5s;
+      }
+
+      .btn {
+        position: absolute;
+        top: 100%;
+        left: 37%;
+        color: $bgSecondColor;
+        text-decoration: none;
+        opasity: 0;
+        transition: .2s ease-in-out;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          podition: absolute;
+          top: -8px;
+          left: -75px;
+          height: 50px;
+          width: 50px;
+          transform: skewX(-45deg);
+        }
+
+        &:hover::before {
+          left: 150px;
+          transition: .5s ease-in-out;
+        }
+
+        &:active {
+          color: $textColor;
+        }
+
+        &:hover {
+          opacity: 1;
+          transition: .5s;
+        }
       }
     }
 

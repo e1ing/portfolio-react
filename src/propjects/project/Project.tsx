@@ -3,22 +3,22 @@ import style from './Project.module.scss'
 
 type ProjectType = {
     projectTitle: string,
-    projectDescription: string,
     linkUrl: string,
     styleImg: string
 }
 
-export const Project: FC<ProjectType> = ({styleImg, projectTitle, projectDescription, linkUrl}) => {
+export const Project: FC<ProjectType> = ({styleImg, projectTitle, linkUrl}) => {
     return (
 
         <div className={style.wrapper}>
             <div className={style.boxImg}>
                 <img className={style.imageStyle} src={styleImg} alt={"image"}/>
-               <div className={style.container}>
-                <a className={style.link} href={linkUrl}> {/* on github link*/}
-                    <h5 className={style.heading}>Details</h5>
-                </a>
-               </div>
+                <div className={style.container}>
+                    <div className={style.text}>
+                        <h1 className={style.projTitle}>{projectTitle}</h1>
+                        <a className={style.btn} href={linkUrl}> </a>
+                    </div>
+                </div>
             </div>
 
         </div>
